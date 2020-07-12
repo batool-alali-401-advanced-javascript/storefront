@@ -5,8 +5,8 @@
 
 ### Links and Resources
 
-- [submission PR]()
-- [netlify]()
+- [submission PR](https://github.com/batool-alali-401-advanced-javascript/storefront/pull/2)
+- [netlify](https://batool-store.netlify.app/)
 
 
 ### Setup
