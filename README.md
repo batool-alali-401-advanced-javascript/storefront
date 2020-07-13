@@ -1,4 +1,4 @@
-# LAB - Class 36
+# LAB - Class 37
 
 ## Project: storefront
 ### Author: Batool Al-Ali
@@ -6,7 +6,7 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/batool-alali-401-advanced-javascript/storefront/pull/4)
-- [netlify](https://batool-store.netlify.app/)
+- [netlify](https://batool-store-v1.netlify.app/)
 
 
 ### Setup
