@@ -7,12 +7,14 @@ import Footer from './componants/Footer';
 
 import CurrentCategory from './componants/activeCatigory';
 import Products from './componants/Products';
-import './componants/style.scss'
+import Cart from './componants/SimpleCart';
+import './componants/style.scss';
 
 export default function App() {
   return (
     <CssBaseline>
       <Header />
+      {/* <Cart/> */}
       <Container maxWidth='lg' className='main-content'>
         <CurrentCategory />
         <Products />

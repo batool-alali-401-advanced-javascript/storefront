@@ -5,7 +5,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/batool-alali-401-advanced-javascript/storefront/pull/2)
+- [submission PR](https://github.com/batool-alali-401-advanced-javascript/storefront/pull/4)
 - [netlify](https://batool-store.netlify.app/)
 
 
@@ -17,4 +17,4 @@
 
 
 #### UML
-![UML Diagram](UML1.jpg)
+![UML Diagram](UML2.jpg)
