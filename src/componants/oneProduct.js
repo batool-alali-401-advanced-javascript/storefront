@@ -37,7 +37,7 @@ function SingleProduct(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size='small' >
+          <Button size='small' onClick={props.add}>
             Add To Cart
           </Button>
           <Button size='small' >

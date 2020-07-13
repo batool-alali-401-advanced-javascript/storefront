@@ -4,25 +4,13 @@ import Grid from '@material-ui/core/Grid';
 import SingleProduct from './oneProduct';
 
 function Products(props) {
-  function addToCart(product) {
-    const action = {
-      type: 'ADD_TO_CART',
-      payload: product,
-    };
-    console.log('action',action.payload);
-    props.dispatch(action);
-  }
-
   
-  const filteredProducts = props.products.filter(
-    (product) => product.category === props.activeCategory,
-  );
 
   
   let theProducts = [];
 
-  for (let i = 0; i < filteredProducts.length; i++) {
-    let product = filteredProducts[i];
+  for (let i = 0; i < props.cart.length; i++) {
+    let product = props.cart.length[i];
 
     theProducts.push(
       <SingleProduct
@@ -30,9 +18,6 @@ function Products(props) {
         name={product.name}
         img={product.image}
         price={product.price}
-        add={(e) => {
-          addToCart(filteredProducts[i]);
-        }}
       />,
     );
   }

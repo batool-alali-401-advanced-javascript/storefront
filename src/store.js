@@ -22,7 +22,8 @@ const initialState = {
       { name: 'Bread', category: 'food', price: 2.39, inStock: 90,
      image:'https://toppng.com/uploads/preview/bread-png-image-loaf-of-bread-11563103187ssm8yazedr.png' },
     ],
-    activeCategory: ''
+    activeCategory: '',
+    cart:[],
   };
 
 const reducer = (state = initialState, action) => {
@@ -32,8 +33,8 @@ const reducer = (state = initialState, action) => {
     case 'SET_CURRENT_CATEGORY':
       newState.activeCategory = action.payload;
       break;
-    case 'RESET_STORE':
-      newState = initialState;
+    case 'ADD_TO_CART':
+      newState.cart = [...newState.cart, action.payload];
       break;
     default:
       break;
