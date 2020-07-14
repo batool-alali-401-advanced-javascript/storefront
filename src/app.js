@@ -14,7 +14,7 @@ export default function App() {
   return (
     <CssBaseline>
       <Header />
-      {/* <Cart/> */}
+      <Cart/>
       <Container maxWidth='lg' className='main-content'>
         <CurrentCategory />
         <Products />

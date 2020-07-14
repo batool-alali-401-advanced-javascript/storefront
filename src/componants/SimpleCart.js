@@ -1,41 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
-import SingleProduct from './oneProduct';
 
 function Products(props) {
   
 
-  
-  let theProducts = [];
+  console.log('CART,' , props.cart)
 
-  for (let i = 0; i < props.cart.length; i++) {
-    let product = props.cart.length[i];
-
-    theProducts.push(
-      <SingleProduct
-        key={i}
-        name={product.name}
-        img={product.image}
-        price={product.price}
-      />,
-    );
-  }
 
   return (
-    <Grid id='products' container className='products' spacing={5}>
-      <Grid item xs={12}>
-        <Grid container justify='center' spacing={5}>
-          {theProducts}
-        </Grid>
-      </Grid>
-    </Grid>
+      <ul>
+          {props.cart.map(item => (
+            <li
+            key={item.name}
+            >
+             {item.name}
+          </li>
+        ))}
+       </ul>
   );
 }
 
 const mapStateToProps = (state) => ({
-  products: state.products,
-  activeCategory: state.activeCategory,
+//   products: state.products,
+//   activeCategory: state.activeCategory,
+    cart:state.cart
 });
 
 export default connect(mapStateToProps)(Products);
